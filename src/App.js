@@ -8,6 +8,8 @@ import Login from "./pages/Login"
 import ForgotPassword from "./pages/ForgotPassword";
 import OpenRoute from "../src/components/core/Auth/OpenRoute"
 import UpdatePassword from "./pages/UpdatePassword";
+import About from "./pages/About"
+import Contact from "./pages/Contact";
 function App() {
 
   return (
@@ -50,6 +52,8 @@ function App() {
           }
         />
 
+        <Route path="/about" element={<About />} />
+
         <Route
           path="update-password/:id"
           element={
@@ -58,6 +62,14 @@ function App() {
             </OpenRoute>
           }
         />
+
+        <Route
+          path="/contact"
+          element={
+              <Contact />
+          }
+        />
+        
       </Routes>
     </div>
   );

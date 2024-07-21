@@ -11,7 +11,7 @@ import { categories } from "../../services/apis";
 import { BsChevronDown } from "react-icons/bs"
 
 const Navbar = () => {
-
+ 
     const { token } = useSelector((state) => state.auth);
     const { user } = useSelector((state) => state.profile);
     const { totalItems } = useSelector((state) => state.cart);
@@ -90,6 +90,7 @@ const Navbar = () => {
                                         </div>
                                     </>
                                 ) : (
+                        
                                     <Link to={link?.path}>
                                         <p
                                             className={`${matchRoute(link?.path)
@@ -133,6 +134,7 @@ const Navbar = () => {
                     }
 
                     {
+                        
                         token == null && (
                             <Link to="/signup" className="border border-richblack-700 bg-richblack-800 py-[8px] px-[12px] text-richblack-100 rounded-md">
                                 <button>
