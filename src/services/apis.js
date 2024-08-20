@@ -1,7 +1,8 @@
-const BASE_URL = "https://study-mart.vercel.app/api/v1";
+// const BASE_URL = "http://localhost:4000/api/v1"
+const BASE_URL = "https://studymart.onrender.com/api/v1";
 
 export const categories = {
-  CATEGORIES_API:BASE_URL+ "/course/showAllCategory",
+  CATEGORIES_API: BASE_URL + "/course/showAllCategory",
 };
 
 export const endpoints = {
@@ -12,11 +13,9 @@ export const endpoints = {
   RESETPASSWORD_API: BASE_URL + "/auth/reset-password",
 };
 
-
 export const contactusEndpoint = {
   CONTACT_US_API: BASE_URL + "/reach/contact",
-}
-
+};
 
 export const settingsEndpoints = {
   DELETE_PROFILE_API: BASE_URL + "/profile/deleteProfile",
@@ -30,14 +29,12 @@ export const settingsEndpoints = {
 //   DELETE_PROFILE_API: BASE_URL + "/profile/deleteProfile",
 // }
 
-
 //PROFILE ENDPOINTS
 export const profileEndpoints = {
   GET_USER_DETAILS_API: BASE_URL + "/profile/getUserDetails",
   GET_USER_ENROLLED_COURSES_API: BASE_URL + "/profile/getEnrolledCourses",
   GET_INSTRUCTOR_DATA_API: BASE_URL + "/profile/instructorDashboard",
 };
-
 
 // COURSE ENDPOINTS
 export const courseEndpoints = {
@@ -53,10 +50,9 @@ export const courseEndpoints = {
   DELETE_SECTION_API: BASE_URL + "/course/deleteSection",
   DELETE_COURSE_API: BASE_URL + "/course/deleteCourse",
   GET_FULL_COURSE_DETAILS_AUTHENTICATED: BASE_URL + "/course/getCourseDetails",
- // LECTURE_COMPLETION_API: BASE_URL + "/course/updateCourseProgress",
+  // LECTURE_COMPLETION_API: BASE_URL + "/course/updateCourseProgress",
   //CREATE_RATING_API: BASE_URL + "/course/createRating",
 };
-
 
 export const catalogData = {
   CATALOGPAGEDATA_API: BASE_URL + "/course/getCategoryPageDetails",
