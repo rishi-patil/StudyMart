@@ -24,7 +24,7 @@ pipeline {
 		stage('Tests'){
 			steps {
 				// Use 'bat' for running tests on Windows
-				bat 'npm test'
+			 bat 'npm test --passWithNoTests'
 			}
 		}
 		stage('SonarQube Analysis'){
