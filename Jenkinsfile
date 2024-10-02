@@ -11,6 +11,11 @@ pipeline {
 	stages {
 		stage('Checkout Github'){
 			steps {
+				 script {
+                   			bat 'git config --global http.postBuffer 1048576000' 
+					bat 'git config --global http.lowSpeedLimit 1000'
+                    			bat 'git config --global http.lowSpeedTime 60'
+               		 }
 				git branch: 'main', credentialsId: 'git-token', url: 'https://github.com/rishi-patil/StudyMart.git'
 			}
 		}
