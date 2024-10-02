@@ -16,7 +16,7 @@ pipeline {
 					bat 'git config --global http.lowSpeedLimit 1000'
                     			bat 'git config --global http.lowSpeedTime 60'
                		 }
-				git branch: 'main', credentialsId: 'git-token', url: 'https://github.com/rishi-patil/StudyMart.git'
+				git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/rishi-patil/StudyMart.git'
 			}
 		}
 
