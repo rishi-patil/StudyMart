@@ -25,7 +25,7 @@ app.use(express.json())
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000", // Replace with your actual Vercel domain
+    origin: "https://studymart-frontend.onrender.com", // Replace with your actual Vercel domain
     credentials: true,
   })
 );
@@ -42,7 +42,7 @@ app.use(
 cloudinaryConnect();
 
 app.use(cors({
-    origin: "http://localhost:3000", 
+    origin: "https://studymart-frontend.onrender.com", 
     credentials: true,
 }));
 //ROUTES
