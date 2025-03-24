@@ -1,3 +1,4 @@
+import React from "react";
 import HighlightText from "../HomePage/HighlightText";
 import CTAButton from "../HomePage/Button"
 

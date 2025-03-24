@@ -1,13 +1,14 @@
+import React from "react";
 import { useState } from "react"
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation} from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi"
 import { useDispatch, useSelector } from "react-redux";
 import { passwordReset } from "../services/authAPI";
 
 const UpdatePassword = () => {
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const location = useLocation()
     const { loading } = useSelector((state) => state.auth)
     const [formData, setFormData] = useState({

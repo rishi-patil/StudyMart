@@ -1,3 +1,4 @@
+import React from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../components/common/Footer"
 import { useEffect, useState } from "react";

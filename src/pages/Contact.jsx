@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../components/common/Footer"
 import ContactForm from "../components/core/ContactUs/ContactForm"
 import ContactDetails from "../components/core/ContactUs/ContactDetails";

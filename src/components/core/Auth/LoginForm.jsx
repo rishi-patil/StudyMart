@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
 import { useDispatch } from "react-redux"
 import { Link, useNavigate } from "react-router-dom"
-import {login} from "../../../services/authAPI"
+import { login } from "../../../services/authAPI"
 
 function LoginForm() {
     const navigate = useNavigate()
@@ -17,10 +17,10 @@ function LoginForm() {
 
     const [showPassword, setShowPassword] = useState(false);
 
-    const handleOnChange =(e) => {
+    const handleOnChange = (e) => {
         setFormData((prevData) => ({
             ...prevData,
-            [e.target.name]:e.target.value
+            [e.target.name]: e.target.value
         }))
     }
 
@@ -88,7 +88,7 @@ function LoginForm() {
                     Sign In
                 </button>
             </form>
-            
+
         </div>
     );
 }

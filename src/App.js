@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -12,11 +13,11 @@ import PrivateRoute from "../src/components/core/Auth/PrivateRoute";
 import UpdatePassword from "./pages/UpdatePassword";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import MyProfile from "./components/core/Dashboard/MyProfile"
+import MyProfile from "./components/core/Dashboard/MyProfile";
 import EnrolledCourses from "./components/core/Dashboard/EnrolledCourses";
 import Cart from "./components/core/Dashboard/Settings/Cart";
-import Dashboard from "./pages/Dashboard"
-import Error from "./pages/Error"
+import Dashboard from "./pages/Dashboard";
+import Error from "./pages/Error";
 import { useSelector } from "react-redux";
 import { ACCOUNT_TYPE } from "./utils/constants";
 import MyCourses from "./components/core/Dashboard/MyCourses";
@@ -24,7 +25,6 @@ import Catalog from "./pages/Catalog";
 import CourseDetails from "./pages/CourseDetails";
 
 function App() {
-  
   const { user } = useSelector((state) => state.profile);
   return (
     <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">

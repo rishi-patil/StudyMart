@@ -1,4 +1,3 @@
-import { current } from "@reduxjs/toolkit";
 import { resetCart } from "../slice/cartSlice";
 import { setPaymentLoading } from "../slice/courseSlice";
 import rzplogo from "../assets/Logo/rzp_logo.png"
